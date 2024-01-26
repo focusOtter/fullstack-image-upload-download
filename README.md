@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fullstack Image Upload and Download
+
+Integrate a NextJS frontend with an AWS CDK backend, offering a simple solution for handling image uploads and downloads.
+
+## Overview
+
+This project is structured into two main parts:
+
+- **Frontend**: A NextJS application at the root of the project.
+- **Backend**: An AWS CDK backend located in the `_backend` directory.
+
+### Key Features
+
+- **Amazon Cognito Authentication**: Secure user authentication process.
+- **Amazon S3 Integration**: Handles file uploads and downloads.
+- **AWS Amplify Libraries**: Allow the frontend to communicate with AWS
 
 ## Getting Started
 
-First, run the development server:
+### Backend Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Navigate to Backend Directory**: Change to the `_backend` directory.
+2. **Install Dependencies**: Run `npm i` to install necessary packages.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Root Directory**: Stay at the root of the project.
+2. **Install Dependencies**: Run `npm i` to set up the NextJS application.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### User Interface
 
-## Learn More
+- The UI is basic!
+- Uses `withAuthenticator` for straightforward authentication.
+- `StorageManager` and `StorageImage` for handling image files.
 
-To learn more about Next.js, take a look at the following resources:
+## Deploying the Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Navigate to Backend Directory**: Ensure you're in the `_backend` directory.
+2. **Deploy Resources**: Execute `npx aws-cdk deploy --outputs-file output.json`.
+   - This command deploys necessary resources and generates an `output.json` file.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Configuration
 
-## Deploy on Vercel
+- The frontend's `awsconfig.ts` file reads the `output.json` to create a configuration for AWS Amplify.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Your contributions are highly appreciated. Whether it's suggesting new features, improving documentation, or fixing bugs, your input helps make this project better.
+
+## Further Assistance
+
+For any questions or issues, please feel free to open an issue in the repository.

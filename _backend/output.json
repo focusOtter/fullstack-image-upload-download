@@ -1,0 +1,9 @@
+{
+	"YtS3BackendStack": {
+		"UserPoolClientId": "somevalue",
+		"UserPoolId": "somevalue",
+		"BucketName": "somevalue",
+		"Region": "somevalue",
+		"IdentityPoolId": "somevalue"
+	}
+}

@@ -1,4 +1,5 @@
 # Fullstack Image Upload and Download
+<img width="1906" alt="image" src="https://github.com/focusOtter/fullstack-image-upload-download/assets/5106417/0104102c-341b-49b1-95b8-1368781f9a13">
 
 Integrate a NextJS frontend with an AWS CDK backend, offering a simple solution for handling image uploads and downloads.
 
@@ -11,8 +12,13 @@ This project is structured into two main parts:
 
 ### Key Features
 
+<img width="1065" alt="image" src="https://github.com/focusOtter/fullstack-image-upload-download/assets/5106417/ca0a5a76-498b-4992-8876-249dddeb3976">
+
 - **Amazon Cognito Authentication**: Secure user authentication process.
 - **Amazon S3 Integration**: Handles file uploads and downloads.
+
+<img width="1337" alt="image" src="https://github.com/focusOtter/fullstack-image-upload-download/assets/5106417/243e447e-1b85-4eb0-be1c-3727be11fa9e">
+
 - **AWS Amplify Libraries**: Allow the frontend to communicate with AWS
 
 ## Getting Started
@@ -29,7 +35,7 @@ This project is structured into two main parts:
 
 ### User Interface
 
-- The UI is basic!
+- The UI is intentionally basic!
 - Uses `withAuthenticator` for straightforward authentication.
 - `StorageManager` and `StorageImage` for handling image files.
 
